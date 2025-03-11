@@ -69,8 +69,6 @@ const mostLikes = (blogs) => {
     return authorAndLikes
 }
 
-console.log(mostLikes(blogDB.listWithManyBlogs))
-
   
 module.exports = {
     dummy, totalLikes, favouriteBlog, mostBlogs, mostLikes

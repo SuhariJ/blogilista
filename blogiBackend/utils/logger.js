@@ -1,10 +1,15 @@
 
 const info = (...prompts) => {
-    console.log(...prompts)
+    
+    if (process.env.NODE_ENV !== 'test') { 
+        console.log(...prompts)
+    }
 }
 
 const error = (...prompts) => {
-    console.log(...prompts)
+    if (process.env.NODE_ENV !== 'test') { 
+        console.error(...prompts)
+    }
 }
 
 module.exports = {
